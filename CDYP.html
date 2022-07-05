@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inknut+Antiqua:wght@300;400&family=Red+Hat+Display:wght@300&family=Red+Hat+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <div class="BG"
+        </div>
+  <!--Navigation -->
+        <nav class="fixed">
+          <div class="container">
+            <div class="logo">
+              <a href="index.html">
+              <img src="./img/logo.svg" alt="" />
+              </a>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                  <a href="https://www.behance.net/ulaura" class="active">Behance</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/ulinska/" class="active">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+  <!--case study -->
+<section class="section div-case" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Project">Co-design Your Place</h3>
+          </div>
+
+<div class="grid-1">
+            <h1 class="text-case title-sm">Project overview</h1>
+</div>
+
+<div class="grid-2">
+    <div class="column-1">
+        <p class="text text-case">Last summer, I was lucky to be a part of Co-design Your Place.</p>
+            <h3 class="h3-case">What is Co-design Your Place?</h3>
+            <p class="text text-case">It is a volunteer program that gathers young designers to work on regeneration of Palace-Park Complex in Siemianowice Śląskie. This year, we used service design as a tool to gather and implement ideas that would help us with establishing a fine crowdfunding to raise money for regeneration of the palace.</p>
+            <h3 class="h3-case">Here you can read all about the program:</h3>
+
+            <a class="a-case" href="https://www.summer.codesignyourplace.eu/"> Click!</a>
+
+            <h3 class="h3-case">And here you can read about the results:</h3>
+            <a class="a-case" href="https://www.summer.codesignyourplace.eu/results"> Click!</a>
+        </div>
+
+            <div class="column-2">
+              <img class="img-case" src="img/cyp/CDYP.webp" alt="">
+           </div>
+          </div>
+
+
+
+
+          </div>
+      </section>
+        </main>
+        <!--Footer -->
+          <footer class="footer">
+            <div class="container">
+              <div class="grid-4">
+
+          <div class="footer-input"> </div> <!-- Jak to wywalisz to się wszytko wykrzaczy. -->
+
+              </div>
+
+              <div class="bottom-footer">
+                <div class="copyright">
+                  <p class="text">
+                     Designed and coded by
+                    <span>Patrycja Ulińska</span>
+                  </p>
+                </div>
+
+                <div class="followme-wrap">
+                  <div class="followme">
+                    <h3>Follow me on</h3>
+                    <span class="footer-line"></span>
+                    <div class="social-media">
+                      <a href="https://www.behance.net/ulaura">
+                        <i class="fab fa-behance"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/ulinska/">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="back-btn-wrap">
+                    <a href="#" class="back-btn">
+                      <i class="fas fa-chevron-up"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        <!--basic animations -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="./js/isotope.pkgd.min.js"></script>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script src="./js/app.js"></script>
+
+          <!--Hoover invert -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script>
+          $( ( ) => {
+            $( 'body' ).prepend ( '<div class="cursor cursor-dot" style="left: 0px; top: 0px;">' );
+            $( window ).mousemove ( function ( e ) {
+              $( '.cursor' ).css ( {
+                left: e.pageX,
+                top: e.pageY
+                } );
+              } );
+              $( window ).mousemove ( function ( e ) {
+                $( 'a, button' ).on ( 'mouseenter', function ( ) {
+                  $( '.cursor' ).addClass ( 'active' );
+                  } );
+                } );
+              $( window ).mousemove ( function ( e ) {
+                $( 'a, button' ).on ( 'mouseleave', function ( ) {
+                  $( '.cursor' ).removeClass ( 'active' );
+                  } );
+                } );
+            } );
+          </script>
+        <!--read more and dots -->
+      <script type="text/javascript">
+      function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+      } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+      }
+      }
+      </script>
+        <!--icons-->
+      <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+        <!--Typing header -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <script>
+       var typed = new Typed(".auto-type", {
+           strings: ["amazing", "cośtam", "placeholder"],
+           typeSpeed: 150,
+           backSpeed: 150,
+           loop: true
+       })
+      </script>
+
+
+        </body>
+      </html>
